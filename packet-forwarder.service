@@ -1,0 +1,13 @@
+[Unit]
+Description=lora-packet_forwarder
+After=network.target
+
+[Service]
+User=packet_forwarder
+Group=packet_forwarder
+ExecStart=/opt/packet_forwarder/lora_pkt_fwd/lora_pkt_fwd
+WorkingDirectory=/opt/packet_forwarder/lora_pkt_fwd/
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
