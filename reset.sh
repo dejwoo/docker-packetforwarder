@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 #Script for reseting iC880A over reset jumper which is connected at GPIO 25
 echo "25" > /sys/class/gpio/export
